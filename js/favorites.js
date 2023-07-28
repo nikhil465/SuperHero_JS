@@ -54,7 +54,7 @@ function removeFromFavorites(superheroId) {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     const updatedFavorites = favorites.filter((id) => id !== superheroId);
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-    renderFavorites();
+    //renderFavorites();
 }
 
 // Attach event listener
